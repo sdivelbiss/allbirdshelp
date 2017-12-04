@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox Nav</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- <header class="top">
+            
+        </header> -->
+
+        <nav class="flex-nav">
+            <a href="#" class="toggleNav">☰ Help</a>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#fit" data-toggle="tab" class="closeMenu fit">Fit Guide</a>
+                </li>
+                <li>
+                    <a href="#shoe" data-toggle="tab" class="closeMenu shoe">Shoe Care</a>
+                </li>
+                <li>
+                    <a href="#faq" data-toggle="tab" class="closeMenu faq">FAQ</a>
+                </li>
+                <li>
+                    <a href="https://exchanges.allbirds.com/" class="closeMenu">Returns/Exchanges</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="tab-content details">
+            <div id="fit" class="tab-pane fade in active">
+                
+                <img src="img/fit.png">
+            </div>
+            <div id="shoe" class="tab-pane fade">
+                
+                <img src="img/shoeCare.png">
+            </div>
+            <div id="faq" class="tab-pane fade">
+                
+                <img src="img/faq.png">
+            </div>
+        </div>
+
+        <footer class="top">
+                <img class="img-responsive img-fluid" src="img/footer.png">
+        </footer>
+
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            $('.toggleNav').on('click', function () {
+                $('.flex-nav ul').toggleClass('open');
+            });
+            $('.closeMenu').on('click', function () {
+                $('.flex-nav ul').toggleClass('open');
+            });
+            
+        });
+
+        function solution(number) {
+            var sum = 0;
+            for (i = 0; i < number; i++) {
+                if (i % 5 == 0 || i % 3 == 0) {
+                    //let total = number.reduce(num => num * num)
+                    sum += i
+                    console.log(sum)
+
+                }
+
+            }
+            return sum
+        }
+
+        solution(10)
+
+    </script>
+</body>
+
+</html>
