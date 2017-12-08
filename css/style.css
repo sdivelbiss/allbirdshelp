@@ -120,13 +120,14 @@ section, footer {
 
   /* Reorder items */
   .wrapper > * {
-    order:999;
+    order:3;
   }
   
   /* Nav */
   .flex-nav {
-    order:1;
+    order:2;
   }
+  
 
   .toggleNav {
     display: block;
@@ -148,13 +149,13 @@ section, footer {
 }
   
   /* Header */
-  .top {
-    order:2;
+  .topHeader {
+    order:1;
   }
 
   /* Details */
   .details {
-    order:1;
+    order:3;
   }
 
   /* Sign Up */
